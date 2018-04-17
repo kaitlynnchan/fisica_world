@@ -69,7 +69,7 @@ void updatePlayer() {
     if (c.contains("spring")) {
       player.setVelocity(player.getVelocityX(), -550);
     }
-    if (c.contains("ground") || c.contains("mushright") || c.contains("mushleft") || c.contains("mushcenter") || c.contains("water") || c.contains("crate") || c.contains("brick") || c.contains("dirt") || c.contains("bridge") || c.contains("crystal") || c.contains("ice")) {
+    if (c.contains("ground") || c.contains("mushright") || c.contains("mushleft") || c.contains("mushcenter") || c.contains("water") || c.contains("crate") || c.contains("brick") || c.contains("dirt") || c.contains("bridge") || c.contains("crystal") || c.contains("ice") || c.contains("metal")) {
       jumping = true;
     }
     if (c.contains("player", "bridge")) {
@@ -116,8 +116,9 @@ void updatePlayer() {
       }
     }
 
-    if (c.contains("player", "door2")) {
+    if (c.contains("player", "door") && upkey == true && mode == map1) {
       loadWorld("map2.png");
+      mode = map2;
       //player.setPosition(48, 592);
     }
   } 
