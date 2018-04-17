@@ -5,6 +5,10 @@ FWorld world;
 
 int x, y;
 
+final int map1 = 1;
+final int map2 = 2;
+int mode = map1;
+
 //colors
 color black = color(0, 0, 0);
 color white = color(255, 255, 255);
