@@ -189,7 +189,7 @@ void makeDoor1() {
   b.setFillColor(lightgreen);
   b.setStatic(true);
   b.setGrabbable(false);
-  b.setName("door2");
+  b.setName("door");
   world.add(b);
 }
 void makeCrystal() {
