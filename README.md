@@ -1,2 +1,3 @@
 # fisica_world
-playing around with the fisica world
+
+Practicing with integrating fisica world into processing
